@@ -20,8 +20,8 @@ A comprehensive Python-based application for analyzing gene interaction networks
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/networkAnalysisOfGeneInteractions.git
-cd networkAnalysisOfGeneInteractions
+git clone https://github.com/ColinLiu811/Network-Analysis-of-Gene-Interactions.git
+cd Network-Analysis-of-Gene-Interactions
 ```
 
 2. Install required dependencies:
