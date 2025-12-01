@@ -170,6 +170,7 @@ networkAnalysisOfGeneInteractions/
 ├── network_visualizer.py       # Visualization generation
 ├── report_generator.py          # Report generation
 ├── generate_example_data.py    # Example data generator
+├── view_html.py                # Helper script to view HTML in Codespaces
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 ```
