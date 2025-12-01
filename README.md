@@ -190,6 +190,7 @@ networkAnalysisOfGeneInteractions/
 - The spring layout algorithm is used for visualization, which may produce different layouts on each run
 - Interactive HTML visualizations require pyvis and can be opened in any web browser
 - The tool automatically handles both CSV and TSV formats
+- In GitHub Codespaces, HTML files must be served via HTTP server (use `view_html.py` helper script)
 
 ## Future Enhancements (Stretch Features)
 
