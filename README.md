@@ -6,7 +6,7 @@
 
 A comprehensive Python toolkit for analyzing protein-protein interaction networks using data from the STRING database. This project identifies hub genes through network centrality analysis and visualizes the interaction network structure.
 
-## 🎯 Overview
+## Overview
 
 This project provides a complete pipeline for:
 - **Downloading and processing** STRING database data for Homo sapiens
@@ -16,29 +16,29 @@ This project provides a complete pipeline for:
 - **Visualizing network structure**, communities, and hub genes
 - **Generating comprehensive reports** and statistics
 
-## ✨ Key Features
+## Key Features
 
-- 🔬 **Multiple Centrality Measures**: Degree, Betweenness, Closeness, Eigenvector, PageRank, and Clustering Coefficient
-- 🎯 **Hub Gene Identification**: Composite scoring system combining multiple metrics
-- 🧩 **Community Detection**: Louvain algorithm for identifying functional modules
-- 📊 **Multiple Visualizations**: Static (PNG) and interactive (HTML) network visualizations
-- 📈 **Comprehensive Analysis**: Full statistical summary of network properties
-- 🔄 **Automated Pipeline**: One-command execution of the complete analysis workflow
-- 📁 **Multiple Formats**: Support for GraphML and GEXF graph formats
+- **Multiple Centrality Measures**: Degree, Betweenness, Closeness, Eigenvector, PageRank, and Clustering Coefficient
+- **Hub Gene Identification**: Composite scoring system combining multiple metrics
+- **Community Detection**: Louvain algorithm for identifying functional modules
+- **Multiple Visualizations**: Static (PNG) and interactive (HTML) network visualizations
+- **Comprehensive Analysis**: Full statistical summary of network properties
+- **Automated Pipeline**: One-command execution of the complete analysis workflow
+- **Multiple Formats**: Support for GraphML and GEXF graph formats
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Output Files](#-output-files)
-- [Dependencies](#-dependencies)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Output Files](#output-files)
+- [Dependencies](#dependencies)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ python download_string_data.py
 
 > **Note**: The download script may require API access or create a sample structure file. Manual download is recommended for full datasets.
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Automated Pipeline (Recommended)
 
@@ -121,7 +121,7 @@ python visualize_network.py string_network.graphml hub_genes.csv
 
 For more detailed instructions, see [QUICKSTART.md](QUICKSTART.md).
 
-## 📖 Usage
+## Usage
 
 ### Command-Line Options
 
@@ -170,7 +170,7 @@ python run_pipeline.py [string_file]
 - Runs complete pipeline automatically
 - Optional: provide STRING file path as argument
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Network-Analysis-of-Gene-Interactions/
@@ -206,7 +206,7 @@ Network-Analysis-of-Gene-Interactions/
     └── vis-9.1.2/
 ```
 
-## 📊 Output Files
+## Output Files
 
 After running the pipeline, you'll find the following output files:
 
@@ -226,7 +226,7 @@ After running the pipeline, you'll find the following output files:
 
 > **Note**: Large data files and generated outputs are excluded from git via `.gitignore`. Users need to run the pipeline to generate these files.
 
-## 🔧 Dependencies
+## Dependencies
 
 ### Core Dependencies
 - **pandas** ≥ 1.5.0 - Data manipulation and analysis
@@ -244,7 +244,7 @@ Install all dependencies:
 pip install -r requirements.txt
 ```
 
-## 📚 Documentation
+## Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick start guide with troubleshooting
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Guidelines for contributing
@@ -256,7 +256,7 @@ See the `docs/` folder for:
 - **PRESENTATION.md** - Presentation materials
 - **PROJECT_ESSAY.md** - Detailed project essay
 
-## 🧪 Network Metrics Explained
+## Network Metrics Explained
 
 ### Degree Centrality
 The number of direct connections a protein has. Proteins with high degree centrality interact with many other proteins and are likely key players in the network.
@@ -276,7 +276,7 @@ Google's algorithm adapted for networks. Measures the probability of reaching a 
 ### Clustering Coefficient
 Measures how connected a protein's neighbors are to each other. High clustering indicates local network modules or communities.
 
-## 🎓 Example Results
+## Example Results
 
 The analysis typically identifies:
 - **19,488 proteins** in the human interactome
@@ -290,7 +290,7 @@ Hub genes typically have:
 - Critical roles in network integrity
 - Importance in disease and drug targeting
 
-## ⚠️ Notes and Limitations
+## Notes and Limitations
 
 - **Large networks** (>10,000 nodes) may take significant time to process
 - **Memory requirements**: ~1-3 GB for full human interactome
@@ -299,7 +299,7 @@ Hub genes typically have:
 - **STRING database** access may require registration for full datasets
 - **Computation time**: Centrality computation can take 2-3 hours for large networks
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 - Code style and standards
@@ -307,7 +307,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 - Reporting issues
 - Feature requests
 
-## 📝 Citation
+## Citation
 
 If you use this project in your research, please cite:
 
@@ -320,7 +320,7 @@ If you use this project in your research, please cite:
 }
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **[STRING Database](https://string-db.org/)** for providing comprehensive protein interaction data
 - **[NetworkX](https://networkx.org/)** for powerful graph analysis tools
@@ -328,17 +328,17 @@ If you use this project in your research, please cite:
 - **[Pyvis](https://pyvis.readthedocs.io/)** for interactive network visualizations
 - **[Pandas](https://pandas.pydata.org/)** for data processing
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 References
+## References
 
 - [STRING Database](https://string-db.org/) - Protein interaction database
 - [NetworkX Documentation](https://networkx.org/) - Graph analysis library
 - [STRING API](https://string-db.org/help/api/) - API documentation
 
-## 📧 Contact
+## Contact
 
 For questions, issues, or contributions, please:
 - Open an [issue](https://github.com/ColinLiu811/Network-Analysis-of-Gene-Interactions/issues)
@@ -347,4 +347,4 @@ For questions, issues, or contributions, please:
 
 ---
 
-**Made with ❤️ for computational biology and network analysis**
+**Made for computational biology and network analysis**
