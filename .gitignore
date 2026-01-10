@@ -10,7 +10,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -19,13 +18,13 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
-# Virtual environments
+# Virtual Environments
 venv/
 env/
 ENV/
 .venv
+.ENV
 
 # IDE
 .vscode/
@@ -33,30 +32,39 @@ ENV/
 *.swp
 *.swo
 *~
-.DS_Store
-
-# Project specific - output files
-output/
-*.csv
-*.png
-*.html
-
-# Pyvis generated files
-lib/
-
-# Keep requirements.txt
-!requirements.txt
+.project
+.pydevproject
+.settings/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
 
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# Large data files (should be downloaded separately)
+9606.protein.links.full.v12.0.txt.gz
+string_homo_sapiens.csv
+string_cleaned.csv
+string_network.graphml
 
+# Generated output files
+centrality_results.csv
+hub_genes.csv
+network_*.png
+network_interactive.html
+summary_plots.png
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
