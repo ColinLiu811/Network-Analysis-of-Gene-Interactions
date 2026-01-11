@@ -196,11 +196,6 @@ Network-Analysis-of-Gene-Interactions/
 ├── CHANGELOG.md               # Project changelog
 ├── LICENSE                    # MIT License
 │
-├── docs/                      # Documentation
-│   ├── PORTFOLIO.md          # Project portfolio
-│   ├── PRESENTATION.md       # Presentation materials
-│   └── PROJECT_ESSAY.md      # Project essay
-│
 └── lib/                       # Third-party libraries for visualizations
     ├── tom-select/
     └── vis-9.1.2/
