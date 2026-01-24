@@ -17,13 +17,13 @@ You have two options:
 
 1. Visit https://string-db.org/cgi/download
 2. Select "Homo sapiens" (species ID: 9606)
-3. Download "protein.links.full.v12.0" (or latest version)
-4. The file will be named something like `9606.protein.links.v12.0.txt.gz`
+3. Download "protein.links.full.v11.5" (or latest version)
+4. The file will be named something like `9606.protein.links.v11.5.txt.gz`
 5. Place it in this directory
 
 Then process it:
 ```bash
-python download_string_data.py 9606.protein.links.v12.0.txt.gz
+python download_string_data.py 9606.protein.links.v11.5.txt.gz
 ```
 
 ### Option 2: Use the Download Script
@@ -40,11 +40,6 @@ Note: This may require API access or may create a sample structure file.
 
 ```bash
 python run_pipeline.py
-```
-
-Or with a STRING file:
-```bash
-python run_pipeline.py 9606.protein.links.v12.0.txt.gz
 ```
 
 This will run all steps automatically.
@@ -110,12 +105,11 @@ Make sure you've downloaded the STRING data file first.
 1. Review `hub_genes.csv` to see top hub genes
 2. Open `network_interactive.html` in a web browser
 3. Review the visualizations in the PNG files
-4. Check `docs/` folder for project documentation
+4. Use `PRESENTATION.md` to prepare your presentation
 
 ## Getting Help
 
 - Check the README.md for detailed documentation
-- Review `docs/PRESENTATION.md` for project context
-- Review `docs/PORTFOLIO.md` for project portfolio
+- Review PRESENTATION.md for project context
 - Check STRING database documentation: https://string-db.org/help/
 

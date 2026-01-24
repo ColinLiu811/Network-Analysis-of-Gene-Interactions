@@ -4,12 +4,16 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
+lib/
 lib64/
 parts/
 sdist/
@@ -19,12 +23,20 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environments
-venv/
-env/
-ENV/
-.venv
-.ENV
+# Data files
+*.csv
+*.tsv
+*.txt
+*.graphml
+*.gexf
+*.gz
+
+# Output files
+*.png
+*.jpg
+*.jpeg
+*.html
+*.pdf
 
 # IDE
 .vscode/
@@ -32,39 +44,17 @@ ENV/
 *.swp
 *.swo
 *~
-.project
-.pydevproject
-.settings/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
 
 # OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Large data files (should be downloaded separately)
-9606.protein.links.full.v12.0.txt.gz
-string_homo_sapiens.csv
-string_cleaned.csv
-string_network.graphml
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
 
-# Generated output files
-centrality_results.csv
-hub_genes.csv
-network_*.png
-network_interactive.html
-summary_plots.png
+# Keep example structure
+!requirements.txt
+!README.md
+!PRESENTATION.md
 
-# Logs
-*.log
-
-# Environment variables
-.env
-.env.local

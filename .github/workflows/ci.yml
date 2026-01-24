@@ -23,10 +23,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Test data processing
+    - name: Test example data generation
       run: |
-        python -c "import pandas as pd; import networkx as nx; print('Dependencies OK')"
-    - name: Test script imports
+        python generate_example_data.py -n 20 -i 30 -o test_example.csv
+    - name: Test analysis (without visualization)
       run: |
-        python -c "import download_string_data; import clean_data; import build_graph; import compute_centrality; import visualize_network; print('All modules import successfully')"
+        python gene_network_analysis.py test_example.csv -o test_output
 
