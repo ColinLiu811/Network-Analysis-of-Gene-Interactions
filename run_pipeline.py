@@ -38,10 +38,10 @@ def run_command(cmd, description):
 def check_file_exists(filename, description):
     """Check if a required file exists."""
     if os.path.exists(filename):
-        print(f"✓ {description} found: {filename}")
+        print(f"[OK] {description} found: {filename}")
         return True
     else:
-        print(f"✗ {description} not found: {filename}")
+        print(f"[MISSING] {description} not found: {filename}")
         return False
 
 def main():
@@ -143,9 +143,9 @@ def main():
         if os.path.exists(filename):
             size = os.path.getsize(filename)
             size_mb = size / (1024 * 1024)
-            print(f"  ✓ {filename} ({size_mb:.2f} MB) - {description}")
+            print(f"  [OK] {filename} ({size_mb:.2f} MB) - {description}")
         else:
-            print(f"  ✗ {filename} - {description} (not found)")
+            print(f"  [MISSING] {filename} - {description} (not found)")
     
     print("\nNext steps:")
     print("  1. Review hub_genes.csv for top hub genes")

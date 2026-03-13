@@ -83,15 +83,15 @@ def main():
         
         cleaned_file = output_dir / 'cleaned_interactions.csv'
         df_cleaned.to_csv(cleaned_file, index=False)
-        print(f"  ✓ Cleaned data saved to: {cleaned_file}")
-        print(f"  ✓ Total interactions: {len(df_cleaned)}")
+        print(f"  [OK] Cleaned data saved to: {cleaned_file}")
+        print(f"  [OK] Total interactions: {len(df_cleaned)}")
         print()
         
         # Step 2: Build network graph
         print("Step 2: Constructing network graph...")
         analyzer = NetworkAnalyzer(df_cleaned)
         graph = analyzer.build_graph()
-        print(f"  ✓ Network constructed: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges")
+        print(f"  [OK] Network constructed: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges")
         print()
         
         # Step 3: Compute network metrics
@@ -99,13 +99,13 @@ def main():
         metrics_df = analyzer.compute_metrics()
         metrics_file = output_dir / 'network_metrics.csv'
         metrics_df.to_csv(metrics_file, index=False)
-        print(f"  ✓ Metrics saved to: {metrics_file}")
+        print(f"  [OK] Metrics saved to: {metrics_file}")
         print()
         
         # Step 4: Identify hub genes
         print("Step 4: Identifying hub genes...")
         hub_genes = analyzer.get_hub_genes(args.top_hubs)
-        print(f"  ✓ Top {args.top_hubs} hub genes identified")
+        print(f"  [OK] Top {args.top_hubs} hub genes identified")
         print()
         
         # Step 5: Generate visualization
@@ -116,19 +116,19 @@ def main():
             if args.format in ['png', 'both']:
                 png_file = output_dir / 'network_visualization.png'
                 visualizer.visualize_png(png_file, hub_genes)
-                print(f"  ✓ PNG visualization saved to: {png_file}")
+                print(f"  [OK] PNG visualization saved to: {png_file}")
             
             if args.format in ['html', 'both']:
                 html_file = output_dir / 'network_visualization.html'
                 visualizer.visualize_html(html_file, hub_genes)
-                print(f"  ✓ Interactive HTML visualization saved to: {html_file}")
+                print(f"  [OK] Interactive HTML visualization saved to: {html_file}")
             print()
         
         # Step 6: Generate report
         print("Step 6: Generating summary report...")
         reporter = ReportGenerator(analyzer, hub_genes, output_dir)
         report_file = reporter.generate_report()
-        print(f"  ✓ Report saved to: {report_file}")
+        print(f"  [OK] Report saved to: {report_file}")
         print()
         
         # Display summary
