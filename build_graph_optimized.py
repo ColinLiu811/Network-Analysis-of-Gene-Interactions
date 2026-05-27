@@ -33,7 +33,7 @@ def build_network_graph_optimized(df, weight_column='combined_score', use_sparse
     else:
         G = nx.Graph()
     
-    # Prepare edge list for batch addition (more efficient)
+    # Prepare edge list for batch additiom
     edges = []
     edge_attrs_list = []
     
@@ -55,7 +55,7 @@ def build_network_graph_optimized(df, weight_column='combined_score', use_sparse
                 edge_attrs['weight'] = float(row[weight_column])
                 edge_attrs['normalized_weight'] = float(row[weight_column]) / 1000.0
             
-            # Add other columns as attributes (selective to save memory)
+            # Add other columns as attributes to save memory
             for col in ['combined_score']:  # Only add essential columns
                 if col in df.columns and col != weight_column:
                     edge_attrs[col] = row[col]

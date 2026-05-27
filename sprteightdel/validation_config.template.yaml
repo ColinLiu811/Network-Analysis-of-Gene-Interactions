@@ -1,0 +1,18 @@
+validation:
+  top_n: 50
+  overlap_threshold: 0.70
+  rank_correlation_threshold: 0.80
+  metrics_for_consistency:
+    - degree_centrality
+    - betweenness_centrality
+    - pagerank
+  require_metadata: true
+
+inputs:
+  run_a_hub_file: hub_genes_run_a.csv
+  run_b_hub_file: hub_genes_run_b.csv
+  run_a_centrality_file: centrality_results_run_a.csv
+  run_b_centrality_file: centrality_results_run_b.csv
+
+outputs:
+  summary_json: validation_summary.json

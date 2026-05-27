@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Sprint 7 distribution assets:
+  - `pyproject.toml` packaging metadata and CLI entry points
+  - Docker support (`Dockerfile`, `docker-compose.yml`, `.dockerignore`)
+  - sprint deliverables in `sprtsevendel/` (installation, Docker, release docs)
+- CI workflow enhancements for:
+  - multi-OS and multi-version test matrix
+  - package build artifacts
+  - Docker image build validation
+- Sprint 8 validation and reproducibility assets:
+  - `sprteightdel/` deliverables (framework, guide, template, config)
+  - `examples/validation/` scripts for stability analysis and metadata capture
+  - `examples/notebooks/validation_stability.ipynb`
+
 ## [1.0.0] - 2024-12-XX
 
 ### Added

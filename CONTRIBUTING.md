@@ -48,6 +48,24 @@ Before submitting a PR, please:
 4. Make sure all tests pass
 5. Request review from maintainers
 
+## Documentation Contributions
+
+Documentation improvements are highly encouraged. When adding or updating docs:
+
+- Keep instructions runnable end-to-end on a clean environment
+- Prefer short sections with concrete command examples
+- Cross-link related files (README, QUICKSTART, docs, sprint deliverables)
+- Verify scripts/notebooks referenced in docs actually exist
+- Keep terminology consistent (`hub genes`, `centrality`, `GraphML`, etc.)
+
+### Documentation Style Guide
+
+- Use clear headings and task-oriented section titles
+- Explain inputs, outputs, and expected results
+- Add troubleshooting notes for known failure modes
+- Use fenced code blocks for commands
+- Avoid ambiguous placeholders when real examples can be provided
+
 ## Reporting Issues
 
 When reporting issues, please include:

@@ -1,0 +1,16 @@
+# Copy to config.yaml in your project directory to customize the pipeline.
+# See docs/visualization_guide.md for option descriptions.
+
+pipeline:
+  top_n_hubs: 50
+  confidence_threshold: 400
+
+visualization:
+  dpi: 300
+  layout: spring
+  color_scheme: hub
+  static_max_nodes: 5000
+  interactive_max_nodes: 1000
+  export_formats:
+    - png
+  interactive_backend: visjs

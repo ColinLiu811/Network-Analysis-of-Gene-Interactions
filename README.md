@@ -31,6 +31,8 @@ This project provides a complete pipeline for:
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
+- [Tutorials](#tutorials)
+- [Examples](#examples)
 - [Project Structure](#project-structure)
 - [Output Files](#output-files)
 - [Dependencies](#dependencies)
@@ -57,6 +59,17 @@ cd Network-Analysis-of-Gene-Interactions
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 2b (Optional): Install CLI Entry Points
+
+```bash
+pip install -e .
+```
+
+This enables:
+- `network-analysis`
+- `network-visualize`
+- `network-visualize-advanced`
 
 ### Step 3: Download STRING Data
 
@@ -90,6 +103,16 @@ Or with a STRING file:
 python run_pipeline.py 9606.protein.links.v12.0.txt.gz
 ```
 
+Or with config and additional static export formats:
+```bash
+python run_pipeline.py --config config.yaml --viz-formats svg,pdf
+```
+
+Or with installed CLI entry point:
+```bash
+network-analysis --config config.yaml --viz-formats svg,pdf
+```
+
 This will automatically:
 1. Process the STRING data file
 2. Clean and format the data
@@ -120,6 +143,25 @@ python visualize_network.py string_network.graphml hub_genes.csv
 ```
 
 For more detailed instructions, see [QUICKSTART.md](QUICKSTART.md).
+
+## Tutorials
+
+Sprint 6 tutorial documents are available in `sprtsixdel/`:
+
+- `sprtsixdel/tutorial_getting_started.md`
+- `sprtsixdel/tutorial_analyzing_your_data.md`
+- `sprtsixdel/tutorial_interpreting_results.md`
+- `sprtsixdel/tutorial_troubleshooting.md`
+
+## Examples
+
+Practical examples are available in `examples/`:
+
+- `examples/basic_pipeline_example.py`
+- `examples/compare_networks_example.py`
+- `examples/identify_drug_targets_example.py`
+- `examples/notebooks/interactive_tutorial.ipynb`
+- `examples/notebooks/example_analysis.ipynb`
 
 ## Usage
 
@@ -250,6 +292,22 @@ See the `docs/` folder for:
 - **PORTFOLIO.md** - Complete project portfolio with code examples
 - **PRESENTATION.md** - Presentation materials
 - **PROJECT_ESSAY.md** - Detailed project essay
+- **visualization_guide.md** - Visualization options and advanced CLI usage
+
+See `sprtsixdel/` for Sprint 6 docs:
+- **api_documentation.md** - API and module reference
+- **example_workflows.md** - End-to-end workflow templates
+
+See `sprtsevendel/` for Sprint 7 deployment docs:
+- **installation_guide.md** - Packaging/install guide
+- **docker_usage_guide.md** - Docker and compose usage
+- **release_checklist.md** - Release readiness checklist
+- **versioning_strategy.md** - Versioning and release process
+
+See `sprteightdel/` for Sprint 8 validation docs:
+- **validation_framework.md** - Stability and acceptance criteria
+- **reproducibility_guide.md** - Run reproducibility workflow
+- **report_template.md** - Standardized validation reporting
 
 ## Network Metrics Explained
 
